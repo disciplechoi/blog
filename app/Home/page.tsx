@@ -1,14 +1,19 @@
 import React from 'react'
-import Navbar from '../components/navbar/Navbar'
-import Footer from '../components/footer/Footer'
+import Featured from "../components/Featured/Featured";
+import CardList from "../components/CardList/CardList";
+import CategoryList from "../components/CategoryList/CatogoryList";
+import styles from './homepage.module.css'
 
 const Home = () => {
   return (
-    <>
-      <Navbar/>
-      <Footer/>
+    <div className={styles.container}>
+      <Featured/>
+      <CategoryList/>
+      <div className={styles.content}>
+        <CardList/>
+      </div>
     
-    </>
+    </div>
   )
 }
 
